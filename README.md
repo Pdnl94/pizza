@@ -1,4 +1,4 @@
-# Pizza
+# Pizzéria
 ## Feladat leírása
 
 ## Funkcionális követelményeit
