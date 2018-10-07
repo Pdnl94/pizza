@@ -1,4 +1,6 @@
 # Pizza
+# Feladat leírása
+
 ## Funkcionális követelményeit
 
 ## Nem funkcionális követelményei
