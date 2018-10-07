@@ -1,2 +1,8 @@
-# pizza
-Alkalmazások fejlesztése beadandó
+# Pizza
+## Funkcionális követelményeit
+
+## Nem funkcionális követelményei
+
+## Szakterületi fogalomjegyzék
+
+## Szerepkörök
