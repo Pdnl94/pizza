@@ -1,5 +1,5 @@
 # Pizza
-# Feladat leírása
+## Feladat leírása
 
 ## Funkcionális követelményeit
 
