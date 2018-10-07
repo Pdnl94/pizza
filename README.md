@@ -1,6 +1,6 @@
 # Pizzéria
 ## Feladat leírása
-
+Egy pizzéria online rendelő felületének megvalósítása.
 ## Funkcionális követelmények
 * Vendég
   * Regisztráció és Bejelentkezés
