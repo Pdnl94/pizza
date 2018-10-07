@@ -1,0 +1,2 @@
+# pizza
+Alkalmazások fejlesztése beadandó
