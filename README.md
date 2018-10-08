@@ -10,7 +10,7 @@ Egy pizzéria online rendelő felületének megvalósítása.
   * Új cím megadása és mentése
   * Pizza hozzáadása a kedvencekhez
   * Korábbi rendelések megnézése és újrarendelése
-  * Pizza áttervezése
+  * Pizza áttervezése (feltét levétele, hozzáadása)
   * Pizzarendelés
 * Adminisztrátor
   * Pizza hozzáadása a választékhoz
