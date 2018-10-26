@@ -1,6 +1,7 @@
 package hu.elte.pizzaorder.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.time.LocalDateTime;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,6 +17,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 
 @Entity
@@ -36,6 +39,14 @@ public class Order {
     //de ha valami fancybb megoldást szeretnél, akkor feel free
     @Column
     private String comment;
+    
+    @Column(updatable = false)
+    @CreationTimestamp
+    private LocalDateTime created_at;
+
+    @Column
+    @UpdateTimestamp
+    private LocalDateTime updated_at;
     
     @ManyToOne
     @JoinColumn
