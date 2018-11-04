@@ -24,7 +24,7 @@ Egy pizzéria online rendelő felületének megvalósítása.
 * Gyors alkalmazás
 * Adatvédelem, különböző hozzáférési jogosultságok megfelelő kiosztása
 ## Adatbázis terv
-![diagram](database_diagram.png)
+![database_diagram](database_diagram.PNG)
 ## Szakterületi fogalomjegyzék
 * Pizza
   * Olasz eredetű étel, ami mára az egész világon elterjedt. Alapja egy kelt tésztából készült vékony lepénykenyér, melyet paradicsom vagy tejföl alapú szósszal borítanak, és erre különféle feltétek kerülnek, a tésztát végül reszelt sajttal szórják meg és sütőben megsütik.
