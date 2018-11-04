@@ -27,55 +27,92 @@ insert into pizza (name, price, created_at, updated_at) values ('Pizza al Salmon
 insert into pizza (name, price, created_at, updated_at) values ('Cipolla e Fagioli', 1490, CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 
 
-insert into topping (name, created_at, updated_at) values ('hámozott paradicsom', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('tejszínes-narancsos chili szósz', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('tejszínes-kapros alap', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('csípős alap', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('hamozott paradicsom', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('tejszines-narancsos chili szosz', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('tejszines-kapros alap', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('csipos alap', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('mozarella', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('oregano', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('bazsalikom', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('prágai sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('pragai sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('gomba', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('petrezselyem', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('parasztkolbász', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('parasztkolbasz', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('brokkoli', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('lilahagyma', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('füstölt parasztkolbász', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('szalámi', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('juhtúró', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('fustolt parasztkolbasz', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('szalami', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('juhturo', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('friss paradicsom', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('olivabogyó', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('füstölt kolbász', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('főtt sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('leveles spenót', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('olivabogyo', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('fustult kolbasz', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('fott sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('leveles spenot', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('gorgonzola', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('fokhagyma', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('csípős olasz szalámi', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('csipos olasz szalami', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('grillezett cukkini', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('padlizsán', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('padlizsan', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('kaliforniai paprika', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('hagyma', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('kapribogyó', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('szardínia', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('speck (tiroli érlelt sonka)', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('tonhaltörzs', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('kakukkfű', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('kapribogyo', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('szardinia', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('speck (tiroli erlelt sonka)', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('tonhaltorzs', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('kakukkfu', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('parmesan', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('juhsajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('garnélarák', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('garnelarak', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('rukkola', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 insert into topping (name, created_at, updated_at) values ('pepperoni', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('spenót levél', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('tojás', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('articsóka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('házi krémsajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('füstölt sajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('cukkíni', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('krémsajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('lazacfilé', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('szárított paradicsom', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('vörösbab', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
-insert into topping (name, created_at, updated_at) values ('pármai sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('spenot level', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('tojas', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('articsoka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('hazi kremsajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('fustolt sajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('cukkini', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('kremsajt', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('lazacfile', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('szaritott paradicsom', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('vorosbab', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+insert into topping (name, created_at, updated_at) values ('parmai sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
+
+
+insert into user (username, password, address, phone_number, e_mail, role) values ('user1', 'password1', 'address1', 'phone_number1', 'e_mail1', 'ADMIN');
+insert into user (username, password, address, phone_number, e_mail, role) values ('user2', 'password2', 'address2', 'phone_number2', 'e_mail2', 'USER');
+insert into user (username, password, address, phone_number, e_mail, role) values ('user3', 'password3', 'address3', 'phone_number3', 'e_mail3', 'USER');
+insert into user (username, password, address, phone_number, e_mail, role) values ('user4', 'password4', 'address4', 'phone_number4', 'e_mail4', 'USER');
+
+
+insert into orders (user_id, delivered, comment, created_at, updated_at) values (2, true, 'az 5-osre nem kerek lilahagymat', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+insert into orders (user_id, delivered, comment, created_at, updated_at) values (3, true, 'a 26-ost kapribogyo nelkul kerem', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+insert into orders (user_id, delivered, created_at, updated_at) values (2, false, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+insert into orders (user_id, delivered, created_at, updated_at) values (3, false, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+insert into orders (user_id, delivered, created_at, updated_at) values (4, false, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+insert into orders (user_id, delivered, created_at, updated_at) values (2, true, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+
+
+insert into ordered_pizza (orders_id, pizzas_id) values (1, 5);
+insert into ordered_pizza (orders_id, pizzas_id) values (1, 19);
+insert into ordered_pizza (orders_id, pizzas_id) values (2, 1);
+insert into ordered_pizza (orders_id, pizzas_id) values (2, 26);
+insert into ordered_pizza (orders_id, pizzas_id) values (2, 16);
+insert into ordered_pizza (orders_id, pizzas_id) values (3, 11);
+insert into ordered_pizza (orders_id, pizzas_id) values (4, 20);
+insert into ordered_pizza (orders_id, pizzas_id) values (4, 21);
+insert into ordered_pizza (orders_id, pizzas_id) values (4, 22);
+insert into ordered_pizza (orders_id, pizzas_id) values (5, 8);
+insert into ordered_pizza (orders_id, pizzas_id) values (6, 3);
+insert into ordered_pizza (orders_id, pizzas_id) values (6, 4);
+insert into ordered_pizza (orders_id, pizzas_id) values (6, 15);
+insert into ordered_pizza (orders_id, pizzas_id) values (6, 16);
+insert into ordered_pizza (orders_id, pizzas_id) values (6, 20);
+
+
+insert into favourite_pizza (users_id, pizzas_id) values (1, 4);
+insert into favourite_pizza (users_id, pizzas_id) values (2, 8);
+insert into favourite_pizza (users_id, pizzas_id) values (3, 9);
+insert into favourite_pizza (users_id, pizzas_id) values (4, 15);
 
 
 insert into pizza_topping (pizzas_id, toppings_id) values (1, 1);

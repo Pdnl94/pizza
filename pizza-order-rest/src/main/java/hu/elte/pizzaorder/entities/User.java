@@ -34,19 +34,21 @@ public class User {
     @Column(nullable = false)
     private String address;
     
-    @Column(nullable = false)
-    private String phoneNumber;
+    @Column
+    private String phone_number;
+    
+    @Column
+    private String e_mail;
     
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Role role;
     
     public enum Role {
-        ROLE_GUEST, ROLE_USER, ROLE_ADMIN
+        GUEST, USER, ADMIN
     }
     
     @OneToMany(mappedBy = "user")
-    @JsonIgnore
     private List<Order> orders;
     
     @ManyToMany
