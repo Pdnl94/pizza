@@ -4,6 +4,8 @@ import hu.elte.pizzaorder.repositories.PizzaRepository;
 import hu.elte.pizzaorder.entities.Pizza;
 import hu.elte.pizzaorder.repositories.ToppingRepository;
 import hu.elte.pizzaorder.entities.Topping;
+import hu.elte.pizzaorder.entities.User;
+import hu.elte.pizzaorder.security.AuthenticatedUser;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +27,9 @@ public class PizzaController {
     @Autowired
     private ToppingRepository toppingRepository;
     
+    @Autowired
+    private AuthenticatedUser authenticatedUser;
+    
     @GetMapping("")
     public ResponseEntity<Iterable<Pizza>> getAll() {
         return ResponseEntity.ok(pizzaRepository.findAll());
@@ -42,16 +47,24 @@ public class PizzaController {
     
     @PostMapping("")
     public ResponseEntity<Pizza> post(@RequestBody Pizza pizza) {
-        Pizza savedPizza = pizzaRepository.save(pizza);
-        return ResponseEntity.ok(savedPizza);
+        User user = authenticatedUser.getUser();
+        User.Role role = user.getRole();
+        if (role.equals(User.Role.ADMIN)) {
+            Pizza savedPizza = pizzaRepository.save(pizza);
+            return ResponseEntity.ok(savedPizza);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
     
     @PutMapping("/{id}")
-    public ResponseEntity<Pizza> update(@PathVariable Integer id, @RequestBody Pizza issue) {
+    public ResponseEntity<Pizza> update(@PathVariable Integer id, @RequestBody Pizza pizza) {
+        User user = authenticatedUser.getUser();
+        User.Role role = user.getRole();
         Optional<Pizza> oPizza = pizzaRepository.findById(id);
-        if (oPizza.isPresent()) {
-            issue.setId(id);
-            return ResponseEntity.ok(pizzaRepository.save(issue));
+        if (oPizza.isPresent() && role.equals(User.Role.ADMIN)) {
+            pizza.setId(id);
+            return ResponseEntity.ok(pizzaRepository.save(pizza));
         } else {
             return ResponseEntity.notFound().build();
         }
@@ -59,8 +72,10 @@ public class PizzaController {
     
     @DeleteMapping("/{id}")
     public ResponseEntity<Pizza> delete(@PathVariable Integer id) {
+        User user = authenticatedUser.getUser();
+        User.Role role = user.getRole();
         Optional<Pizza> oPizza = pizzaRepository.findById(id);
-        if (oPizza.isPresent()) {
+        if (oPizza.isPresent() && role.equals(User.Role.ADMIN)) {
             pizzaRepository.deleteById(id);
             return ResponseEntity.ok().build();
         } else {
@@ -68,7 +83,7 @@ public class PizzaController {
         }
     }
     
-    @PostMapping("/{id}/toppings")
+    /*@PostMapping("/{id}/toppings")
     public ResponseEntity<Topping> insertTopping(@PathVariable Integer id, @RequestBody Topping topping) {
         Optional<Pizza> oPizza = pizzaRepository.findById(id);
         if (oPizza.isPresent()) {
@@ -80,5 +95,5 @@ public class PizzaController {
         } else {
             return ResponseEntity.notFound().build();
         }
-    }
+    }*/
 }
