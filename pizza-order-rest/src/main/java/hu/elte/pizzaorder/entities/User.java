@@ -41,6 +41,9 @@ public class User {
     private String e_mail;
     
     @Column(nullable = false)
+    private boolean enabled;
+    
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Role role;
     

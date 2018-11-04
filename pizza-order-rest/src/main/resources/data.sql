@@ -78,10 +78,10 @@ insert into topping (name, created_at, updated_at) values ('vorosbab', CURRENT_T
 insert into topping (name, created_at, updated_at) values ('parmai sonka', CURRENT_TIMESTAMP(),  CURRENT_TIMESTAMP());
 
 
-insert into user (username, password, address, phone_number, e_mail, role) values ('user1', 'password1', 'address1', 'phone_number1', 'e_mail1', 'ADMIN');
-insert into user (username, password, address, phone_number, e_mail, role) values ('user2', 'password2', 'address2', 'phone_number2', 'e_mail2', 'USER');
-insert into user (username, password, address, phone_number, e_mail, role) values ('user3', 'password3', 'address3', 'phone_number3', 'e_mail3', 'USER');
-insert into user (username, password, address, phone_number, e_mail, role) values ('user4', 'password4', 'address4', 'phone_number4', 'e_mail4', 'USER');
+insert into user (username, password, address, phone_number, e_mail, enabled, role) values ('user1', '$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..', 'address1', 'phone_number1', 'e_mail1', true, 'ADMIN');
+insert into user (username, password, address, phone_number, e_mail, enabled, role) values ('user2', '$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..', 'address2', 'phone_number2', 'e_mail2', true, 'USER');
+insert into user (username, password, address, phone_number, e_mail, enabled, role) values ('user3', '$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..', 'address3', 'phone_number3', 'e_mail3', true, 'USER');
+insert into user (username, password, address, phone_number, e_mail, enabled, role) values ('user4', '$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..', 'address4', 'phone_number4', 'e_mail4', true, 'USER');
 
 
 insert into orders (user_id, delivered, comment, created_at, updated_at) values (2, true, 'az 5-osre nem kerek lilahagymat', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
@@ -110,6 +110,7 @@ insert into ordered_pizza (orders_id, pizzas_id) values (6, 20);
 
 
 insert into favourite_pizza (users_id, pizzas_id) values (1, 4);
+insert into favourite_pizza (users_id, pizzas_id) values (1, 20);
 insert into favourite_pizza (users_id, pizzas_id) values (2, 8);
 insert into favourite_pizza (users_id, pizzas_id) values (3, 9);
 insert into favourite_pizza (users_id, pizzas_id) values (4, 15);
