@@ -36,13 +36,11 @@ Egy pizzéria online rendelő felületének megvalósítása.
 * Adminisztrátor
   * Szerkesztheti a kínálatot, módosíthatja vagy törölheti a felhasználók rendeléseit, törölheti a felhasználót.
 ## Végpontok
-GET	/signup	Regisztrációs oldal megjelenítése
-
-POST	/signup	Regisztráció
-
-GET	/login	Bejelentkező oldal megjelenítése
-POST	/login	Bejelentkezés
-GET	/logout	Kijelentkezés
-GET	/profile	Saját profil megtekintése
-GET	/profile-edit	Saját profil módosítása oldal megjelenítése
-POST	/profile-edit	Saját profil módosítása
+* GET	/signup	Regisztrációs oldal megjelenítése
+* POST	/signup	Regisztráció
+* GET	/login	Bejelentkező oldal megjelenítése
+* POST	/login	Bejelentkezés
+* GET	/logout	Kijelentkezés
+* GET	/profile	Saját profil megtekintése
+* GET	/profile-edit	Saját profil módosítása oldal megjelenítése
+* POST	/profile-edit	Saját profil módosítása
