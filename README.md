@@ -52,3 +52,7 @@ Egy pizzéria online rendelő felületének megvalósítása.
 * GET /toppings/new Új feltét hozzáadása ablak megjelenítése
 * POST /toppings/new Új feltét hozzáadása
 * GET /orders/:id/delete Adott azonosítójú rendelés törlése
+* GET	/search	Keresés a pizzák között
+* GET	/favorite	Kedvenc pizzák listázása listázása
+* GET /favorite Kedvenc pizzák listájának megjelenítése
+* POST /favorite Pizza hozzáadása a kedvencek listájához
