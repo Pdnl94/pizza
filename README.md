@@ -49,7 +49,7 @@ Egy pizzéria online rendelő felületének megvalósítása.
 * GET	/orders/new	Új rendelés hozzáadása oldal megjelenítése
 * POST /orders/new	Új rendelés hozzáadása
 * GET /orders/:id/delete Adott azonosítójú rendelés törlése
-* GET	/pizzas/toppings Feltétek kilistázása
+* GET	/pizzas/:id/toppings Feltétek kilistázása
 * GET /pizzas/:id/toppings/:id/new Új feltét hozzáadása ablak megjelenítése
 * POST /toppings/new Új feltét hozzáadása
 * GET	/search	Keresés a pizzák között
