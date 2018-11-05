@@ -44,7 +44,10 @@ Egy pizzéria online rendelő felületének megvalósítása.
 * GET	/profile	Saját profil megtekintése
 * GET	/profile-edit	Saját profil módosítása oldal megjelenítése
 * POST	/profile-edit	Saját profil módosítása
-* GET	/orders	Saját adott havi kiadások listázása
-* POST /orders	Saját választott havi kiadások listázása
-* GET	/orders/new	Új kiadás hozzáadása oldal megjelenítése
-* POST /orders/new	Új kiadás hozzáadása
+* GET	/orders	Saját utolsó három listázása
+* POST /orders	Saját választott havi rendelések listázása
+* GET	/orders/new	Új rendelés hozzáadása oldal megjelenítése
+* POST /orders/new	Új rendelés hozzáadása
+* GET	/toppings Feltétek kilistázása
+* GET /toppings/new Új feltét hozzáadása ablak megjelenítése
+* POST /toppings/new Új feltét hozzáadása
