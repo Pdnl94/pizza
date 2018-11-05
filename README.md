@@ -37,7 +37,9 @@ Egy pizzéria online rendelő felületének megvalósítása.
   * Szerkesztheti a kínálatot, módosíthatja vagy törölheti a felhasználók rendeléseit, törölheti a felhasználót.
 ## Végpontok
 GET	/signup	Regisztrációs oldal megjelenítése
+
 POST	/signup	Regisztráció
+
 GET	/login	Bejelentkező oldal megjelenítése
 POST	/login	Bejelentkezés
 GET	/logout	Kijelentkezés
