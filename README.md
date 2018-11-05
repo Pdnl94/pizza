@@ -58,3 +58,8 @@ Egy pizzéria online rendelő felületének megvalósítása.
 * POST /favorite Pizza hozzáadása a kedvencek listájához
 * GET /pizzas Pizzák listájának megjelenítése
 * POST /pizzas/new Új pizza hozzáadása
+## Fejletsztői környezet
+* Java JVM
+* h2 adatbázis kezelő
+* NetBeans IDE
+* spring-boot
