@@ -35,6 +35,7 @@ Egy pizzéria online rendelő felületének megvalósítása.
   * A rendelés leadáson kívül, új címet adhat meg és menthet el, készíthet listát a kedvenc pizzáiból, megnézheti a korábbi rendeléseit. 
 * Adminisztrátor
   * Szerkesztheti a kínálatot, módosíthatja vagy törölheti a felhasználók rendeléseit, törölheti a felhasználót.
+  ![usecase diagram](pizza-usecasedia.PNG)
 ## Végpontok
 * GET	/signup	Regisztrációs oldal megjelenítése
 * POST /signup	Regisztráció
