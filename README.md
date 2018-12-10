@@ -40,6 +40,7 @@ Egy pizzéria online rendelő felületének megvalósítása.
 ![homeplan](homeplan.png)
 ![user-pizzak-plan](user-pizzak-plan.png)
 ![admin-pizzak-plan](admin-pizzak-plan.png)
+![admin-pizzak-edit-plan](admin-pizzak-edit-plan.png)
 ## Végpontok
 * GET	/signup	Regisztrációs oldal megjelenítése
 * POST /signup	Regisztráció
