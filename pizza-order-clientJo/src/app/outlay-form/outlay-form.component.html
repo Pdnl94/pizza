@@ -1,0 +1,16 @@
+<form [formGroup]="outlayForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-select placeholder="Név" formControlName="provider">
+      <mat-option *ngFor="let provider of providers" [value]="provider" required>
+          {{provider.name}}
+        </mat-option>    
+      </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Összeg" formControlName="price" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="datetime-local" placeholder="Dátum" formControlName="date" required>
+  </mat-form-field>
+  <button mat-flat-button color="primary" type="submit" [disabled]="outlayForm.invalid">Mentés</button>
+</form>

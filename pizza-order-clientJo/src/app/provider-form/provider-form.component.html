@@ -1,0 +1,6 @@
+<form [formGroup]="providerForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input matInput placeholder="Név" formControlName="name">
+      </mat-form-field>
+    <button mat-flat-button color="primary" type="submit" [disabled]="providerForm.invalid">Mentés</button>
+  </form>

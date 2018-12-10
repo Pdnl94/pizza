@@ -1,0 +1,14 @@
+<h2>Kedvencek</h2>
+
+<mat-nav-list>
+  <a *ngFor="let outlay of outlays" mat-list-item>    
+    <h3 matLine>{{ outlay.name }}</h3>
+    <small matLine>
+      <mat-icon>description</mat-icon> {{ outlay.provider.name }}
+      <mat-icon>attach_money</mat-icon> {{ outlay.price }}
+      <a  [routerLink]="['/outlay', outlay.id, 'edit']"><mat-icon>edit</mat-icon></a>
+      <a [routerLink]="['/outlay', outlay.id, 'delete']"><mat-icon>delete</mat-icon></a>
+    </small>
+  </a>
+</mat-nav-list>
+<a mat-flat-button color="primary" routerLink="/outlay/add">Új</a>

@@ -1,0 +1,17 @@
+<h2>Pizzák listája</h2>
+
+<mat-nav-list>
+  <a *ngFor="let income of incomes" mat-list-item>    
+    <h3 matLine>{{ income.description}}</h3>
+    <small matLine>
+      <mat-icon>attach_money</mat-icon> {{ income.amount }} Ft
+      <div *ngIf="authService.isAdmin">
+      <a  [routerLink]="['/incomes', income.id, 'edit']"><mat-icon>edit</mat-icon></a>
+      <a [routerLink]="['/incomes', income.id, 'delete']"><mat-icon>delete</mat-icon></a>
+      </div>
+    </small>
+  </a>
+</mat-nav-list>
+<div *ngIf="authService.isAdmin">
+  <a mat-flat-button color="primary" routerLink="/incomes/add">Új</a>
+</div>

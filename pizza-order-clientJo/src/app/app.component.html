@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <button mat-button routerLink="">
+    <mat-icon>local_pizza</mat-icon>
+    ELTE Pizzéria
+  </button>
+  <div *ngIf="authService.isLoggedIn">
+    <button mat-button routerLink="/incomes">Pizzák</button>
+    <button mat-button routerLink="/outlays">Kedvencek</button>
+  </div>
+      <div *ngIf="authService.isAdmin">
+          <button mat-button routerLink="/providers">Feltétek</button>
+          <button mat-button routerLink="/categories">Rendelések</button>     
+      </div>
+  <span class="example-fill-remaining-space"></span>
+  <div *ngIf="!authService.isLoggedIn">
+    <button mat-button routerLink="/register">Regisztráció</button>
+    <button mat-button routerLink="/login">Bejelentkezés</button>
+  </div>
+  <div *ngIf="authService.isLoggedIn">
+    <button mat-button>Üdvözlünk, {{ authService.user.username }}</button>
+    <button mat-button (click)="logout()">Kijelentkezés</button>
+  </div>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

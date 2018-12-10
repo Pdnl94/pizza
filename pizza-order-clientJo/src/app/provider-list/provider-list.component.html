@@ -1,0 +1,12 @@
+<h2>Feltétek</h2>
+
+<mat-nav-list>
+  <a *ngFor="let provider of providers" mat-list-item>    
+    <small matLine>
+      <mat-icon>description</mat-icon> {{ provider.name }}
+      <a  [routerLink]="['/providers', provider.id, 'edit']"><mat-icon>edit</mat-icon></a>
+      <a [routerLink]="['/providers', provider.id, 'delete']"><mat-icon>delete_forever</mat-icon></a>
+    </small>
+  </a>
+</mat-nav-list>
+<a mat-flat-button color="primary" routerLink="/providers/add">Új</a>

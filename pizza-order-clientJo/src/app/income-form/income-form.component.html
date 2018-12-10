@@ -1,0 +1,12 @@
+<form [formGroup]="incomeForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="Név" formControlName="description">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Összeg" formControlName="amount">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="datetime-local" placeholder="Dátum" formControlName="date">
+  </mat-form-field>
+  <button mat-flat-button color="primary" type="submit" [disabled]="incomeForm.invalid">Mentés</button>
+</form>
