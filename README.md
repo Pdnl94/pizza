@@ -37,9 +37,9 @@ Egy pizzéria online rendelő felületének megvalósítása.
   * Szerkesztheti a kínálatot, módosíthatja vagy törölheti a felhasználók rendeléseit, törölheti a felhasználót.
   ![usecase diagram](pizza-usecasedia.png)
 ## Felületi tervek
-![homeplan](homeplan.PNG)
-![user-pizzak-plan](user-pizzak-plan.PNG)
-![admin-pizzak-plan](admin-pizzak-plan.PNG)
+![homeplan](homeplan.png)
+![user-pizzak-plan](user-pizzak-plan.png)
+![admin-pizzak-plan](admin-pizzak-plan.png)
 ## Végpontok
 * GET	/signup	Regisztrációs oldal megjelenítése
 * POST /signup	Regisztráció
